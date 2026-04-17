@@ -1,0 +1,8 @@
+body { font-family: sans-serif; background: #f4f4f9; padding: 20px; }
+.container { max-width: 600px; margin: 0 auto; background: white; padding: 20px; border-radius: 10px; }
+.chat-log { margin-top: 20px; height: 400px; overflow-y: auto; border-top: 1px solid #eee; padding: 10px; }
+.message { margin-bottom: 15px; padding: 10px; border-radius: 5px; }
+.pro { background: #e3f2fd; align-self: flex-start; } /* 肯定派 */
+.con { background: #fbe9e7; align-self: flex-end; } /* 否定派 */
+input { width: 70%; padding: 8px; }
+button { padding: 8px 15px; cursor: pointer; }
