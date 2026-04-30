@@ -28,7 +28,7 @@ document.getElementById('startBtn').addEventListener('click', async () => {
         const resultA = await model.generateContent(`
 ${context}
 あなたは論理的な肯定派です。
-テーマ「${topic}」について100文字程度で主張してください。
+テーマ「${topic}」について500文字程度で主張してください。
         `);
 
         const textA = resultA.response.text();
