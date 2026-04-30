@@ -14,7 +14,7 @@ document.getElementById('startBtn').addEventListener('click', async () => {
 
     btn.disabled = true;
     btn.innerText = "考え中...";
-
+    addMessage("テーマ", topic, "topic");
     try {
         const genAI = new GoogleGenerativeAI(key);
 
@@ -38,7 +38,7 @@ ${context}
         // 否定
         const resultB = await model.generateContent(`
 ${history.map(h => `${h.role}: ${h.text}`).join("\n")}
-あなたは鋭い否定派です。
+あなたは鋭い否定派です。ジョークのような皮肉を付けるようにしてください
 直前の主張「${textA}」に反論してください。
         `);
 

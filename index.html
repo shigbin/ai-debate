@@ -3,10 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Debate Studio</title>
+    <title>💭Ai ディベート</title>
 
     <style>
-        body { font-family: sans-serif; background: #f4f4f9; padding: 20px; }
+        body { 
+            font-family: sans-serif;
+                        
+            background: -moz-linear-gradient(top,#a6d2a8, #8f8b57 );
+            background: -webkit-linear-gradient(top, #458dbd, #3c7ea4);
+            background: linear-gradient(to bottom, #2a363b, #2e323b);
+            /*
+            background: #323237;
+            */
+            padding: 20px; 
+        }
         .container { max-width: 600px; margin: 0 auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
 
         .chat-log {
@@ -21,8 +31,9 @@
         }
 
         .message { margin-bottom: 15px; padding: 10px; border-radius: 5px; max-width: 80%; }
-        .pro { background: #e3f2fd; align-self: flex-start; } /* 肯定派 */
-        .con { background: #fbe9e7; align-self: flex-end; } /* 否定派 */
+        .topic { background: #565b5d29; font-weight: bold;color: #000000; } /* テーマ */
+        .pro { background: #89d1fb; align-self: flex-start; } /* 肯定派 */
+        .con { background: #f1b2ab; align-self: flex-end; } /* 否定派 */
 
         input { width: 70%; padding: 8px; }
         button { padding: 8px 15px; cursor: pointer; }
@@ -30,7 +41,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>🤝 AI Debate Studio</h1>
+        <h1>💭 AI Debate</h1>
 
         <div>
             <input type="password" id="apiKey" placeholder="Gemini API Key">
@@ -54,5 +65,9 @@
     </script>
 
     <script type="module" src="script.js"></script>
+    <p>
+    <div class="container">
+        <a href="https://aistudio.google.com/api-keys" target="_blank">APIキーの取得はこちらから</a>👈
+    </div>
 </body>
 </html>
